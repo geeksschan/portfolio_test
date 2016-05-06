@@ -1,0 +1,67 @@
+.sc-carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+.sc-carousel .sc-carousel-btn  {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    box-sizing: border-box;
+}
+.sc-carousel .sc-carousel-btn.prev-btn  {
+    left: 0;
+}
+.sc-carousel .sc-carousel-btn.next-btn  {
+    right: 0;
+}
+.sc-carousel .sc-col-item {
+    display :none;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: auto;
+}
+.sc-carousel .sc-col-item.current {
+    display: block;
+    margin-left: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 1s ease-out;
+}
+
+@media (min-width: 768px) {
+    .sc-carousel {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        border: none;
+    }
+    .sc-carousel .sc-carousel-btn  {
+        display: none;
+    }
+    .sc-carousel .sc-col-item {
+        display : block;
+        position: static;
+    }
+    .sc-carousel .sc-col-item.current {
+        display: block;
+        margin-left: 0;
+        left: 0 !important;
+        -webkit-transform: translateX(0) !important;
+        -moz-transform: translateX(0) !important;
+        -ms-transform: translateX(0) !important;
+        -o-transform: translateX(0) !important;
+        transform: translateX(0) !important;
+        transition: none !important;
+    }
+}

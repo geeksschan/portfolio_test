@@ -1,0 +1,46 @@
+[Sun, 31 Jan 16 12:43:09 +0900][DEBUG] start
+[Sun, 31 Jan 16 12:43:09 +0900][DEBUG] Phalcon\Queue\Beanstalk\Job Object
+(
+    [_id:protected] => 15
+    [_body:protected] => Array
+        (
+            [test] => 4871
+        )
+
+    [_queue:protected] => Phalcon\Queue\Beanstalk Object
+        (
+            [_connection:protected] => Resource id #4
+            [_parameters:protected] => Array
+                (
+                    [port] => 11300
+                    [host] => 127.0.0.1
+                )
+
+        )
+
+)
+
+[Sun, 31 Jan 16 12:43:09 +0900][DEBUG] end
+[Sun, 31 Jan 16 12:43:10 +0900][DEBUG] start
+[Sun, 31 Jan 16 12:43:10 +0900][DEBUG] Phalcon\Queue\Beanstalk\Job Object
+(
+    [_id:protected] => 16
+    [_body:protected] => Array
+        (
+            [test] => 4871
+        )
+
+    [_queue:protected] => Phalcon\Queue\Beanstalk Object
+        (
+            [_connection:protected] => Resource id #4
+            [_parameters:protected] => Array
+                (
+                    [port] => 11300
+                    [host] => 127.0.0.1
+                )
+
+        )
+
+)
+
+[Sun, 31 Jan 16 12:43:10 +0900][DEBUG] end

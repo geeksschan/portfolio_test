@@ -1,0 +1,53 @@
+.sc-carousel {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+.sc-carousel .item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transition: left 1s ease-out;
+}
+
+.item-1 {
+    background-color: red;
+}
+.item-2 {
+    background-color: blue;
+}
+.item-3 {
+    background-color: green;
+}
+.item-4 {
+    background-color: black;
+    color: #fff;
+}
+.item-5 {
+    background-color: white;
+}
+
+.item.prev {
+    left: -100px;
+    visibility: visible;
+    transition: left 1s ease-out;
+}
+.item.current {
+    left: 0;
+    visibility: visible;
+    transition: left 1s ease-out;
+}
+.item.next {
+    left: 100px;
+    visibility: visible;
+    transition: left 1s ease-out;
+}
+
+
+
+
+

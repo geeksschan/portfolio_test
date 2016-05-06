@@ -1,0 +1,231 @@
+#portfolio-main {}
+#portfolio-main .up-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #D6446D;
+    border-radius: 50%;
+    z-index: 100;
+    outline: none;
+    opacity: 0;
+    transition: all .3s ease-in;
+
+}
+#portfolio-main .up-btn.active {
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+#portfolio-main .pf-header {
+    background-image: url("../img/background-image.jpg");
+}
+
+.profile-box {
+    margin: 0 auto;
+    width: 95%;
+}
+
+@media (min-width: 992px) {
+    .profile-box {
+        width: 80%;
+    }
+}
+
+
+#pf-skill {}
+#pf-skill .sc-panel-body.sc-character-line {
+    border-left-color: #3B9A61;
+}
+
+#pf-skill .sc-panel-body .character-title {
+    color: #3B9A61;
+}
+
+.profile-box .sc-media-content p strong {}
+.profile-box .sc-media-content p .passion {
+    color: #D6446D;
+}
+.profile-box .sc-media-content p .experience {
+    color: #754880;
+}
+.profile-box .sc-media-content p .strength {
+    color: #38C4A8;
+}
+.profile-box .sc-media-content p .effort {
+    color: #45A4B7;
+}
+
+/** about pf-list */
+
+.pf-list {
+    position: relative;
+}
+.pf-list .blank{
+    display: inline-block;
+    width: 0;
+    height: 200px;
+}
+@media (min-width: 768px) {
+    .pf-list .blank{
+        display: none;
+    }
+}
+.pf-list .sc-row {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.pf-list .sc-row .sc-col {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .pf-list .sc-row .sc-col-sm-2 {
+        float: left;
+        width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .pf-list .sc-row .sc-col-md-4 {
+        float: left;
+        width: 25%;
+    }
+}
+
+
+.pf-list .pf-item {
+    position: relative;
+    height: 100%;
+
+    border: none;
+    background-image: url("../img/drawing.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pf-list .pf-item .pf-item-content {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 30px 50px;
+    background-color: rgba(0,0,0, 0.6);()
+    color: #fff;
+}
+.pf-list .pf-item:hover .pf-item-content {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    color: #fff;
+}
+.pf-list .pf-item:hover.is-touch .pf-item-content {
+    opacity: 0;
+}
+.pf-list .pf-item:hover.is-touch.in .pf-item-content {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+
+.pf-list .pf-item .pf-item-content .title {
+    font-size: 22px;
+}
+.pf-list .pf-item .pf-item-content .title a {
+    text-decoration: none;
+    color: #fff;
+}
+.pf-list .pf-item .pf-item-content .title:hover a {
+    color: #ccc;
+}
+
+
+.pf-list .pf-item .pf-item-content .line {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+}
+@media (min-width: 768px) {
+    .pf-list .pf-item {
+        height: 200px;
+        border: 1px solid #ddd;
+    }
+    .pf-list .pf-item .pf-item-content {
+        padding: 30px;
+    }
+}
+
+/* 포트폴리오 별 이미지 */
+
+.pf-list .pf-item.tuttoroom {
+    background-image: url("../img/tuttoroom-main.png");
+}
+.pf-list .pf-item.tuttoroom .line {
+    background-color: #00acbd;
+}
+.pf-list .pf-item.bookk {
+    background-image: url("../img/bookk-main.png");
+}
+.pf-list .pf-item.bookk .line {
+    background-color: #c33e38;
+}
+.pf-list .pf-item.thehook {
+    background-image: url("../img/thehook-main.jpg");
+}
+.pf-list .pf-item.thehook .line {
+    background-color: #0397A1;
+}
+.pf-list .pf-item.laughingbeans {
+    background-image: url("../img/laughingbean-main.png");
+}
+.pf-list .pf-item.laughingbeans .line {
+    background-color: #78abea;
+}
+.pf-list .pf-item.ipoptv {
+    background-image: url("../img/ipoptv-main.png");
+}
+.pf-list .pf-item.ipoptv .line {
+    background-color: #fff;
+}
+.pf-list .pf-item.moruwa {
+    background-image: url("../img/moruwa-main.png");
+}
+.pf-list .pf-item.moruwa .line {
+    background-color: #bebebe;
+}
+
+.pf-list .pf-item.peoplefund {
+    background-image: url("../img/peoplefund-main.png");
+}
+.pf-list .pf-item.peoplefund .line {
+    background-color: #032d57;
+}
+.pf-list .pf-item.bookclip {
+    background-image: url("../img/bookclip-main.png");
+}
+.pf-list .pf-item.bookclip .line {
+    background-color: #00AB96;
+}
+
+.pf-list .pf-item.postype {
+    background-image: url("../img/postype-main.png");
+}
+.pf-list .pf-item.postype .line {
+    background-color: #6670dd;
+}
+
+.pf-list .pf-item.portfolio-site {
+    background-image: url("../img/portfolio-main.png");
+}
+.pf-list .pf-item.portfolio-site .line {
+    background-color: #00AB96;
+}

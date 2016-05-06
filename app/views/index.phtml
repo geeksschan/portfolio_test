@@ -1,0 +1,59 @@
+<?php
+/**
+ * @var $list_category string
+ * @var $category_name string
+ */
+?>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>Practice</title>
+        <link rel="icon" type="image/png" href="">
+        <link rel="stylesheet" href="/assets/css/html5.doctor.reset.css">
+        <link rel="stylesheet" href="/assets/css/default.css">
+        <link rel="stylesheet" href="/assets/css/layout.css">
+        <?php $this->assets->outputCss(); ?>
+        <!--[if lt IE 9]>
+            <script src="/assets/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header id="sc-layout-header">
+            <button type="button" class="sc-btn sc-drawer-btn">
+                <span class="close-lt"></span>
+                <span class="close-no"></span>
+                <span class="close-rt"></span>
+            </button>
+            <nav id="sc-layout-nav">
+                <div class="sc-drawer">
+                    <ul class="sc-nav">
+                        <li <?php if($list_category and $list_category == 'main') echo "class='active'"; ?>><a href="/">메인</a></li>
+                        <li>
+                            <a href="#" class="sc-drawer-toggle"><span class="ic-toggle"></span>포트폴리오</a>
+                            <ul<?php if($list_category and $list_category == 'portfolio') echo "class='open'"; ?>>
+                                <li <?php if($list_category and $list_category == 'portfolio' and $category_name == 'tuttoroom') echo "class='active'"; ?>><a href="/portfolio/tuttoroom">Tuttoroom</a></li>
+                                <li <?php if($list_category and $list_category == 'portfolio' and $category_name == 'bookk') echo "class='active'"; ?>><a href="/portfolio/bookk">Bookk</a></li>
+                                <li <?php if($list_category and $list_category == 'portfolio' and $category_name == 'thehook') echo "class='active'"; ?>><a href="/portfolio/thehook">TheHook</a></li>
+                                <li <?php if($list_category and $list_category == 'portfolio' and $category_name == 'laughingbean') echo "class='active'"; ?>><a href="/portfolio/laughingbean">Laughingbean</a></li>
+                                <li <?php if($list_category and $list_category == 'portfolio' and $category_name == 'ipoptv') echo "class='active'"; ?>><a href="/portfolio/ipoptv">Ipoptv</a></li>
+                                <li <?php if($list_category and $list_category == 'portfolio' and $category_name == 'moruwa') echo "class='active'"; ?>><a href="/portfolio/moruwa">Moruwa</a></li>
+                                <li <?php if($list_category and $list_category == 'portfolio' and $category_name == 'peoplefund') echo "class='active'"; ?>><a href="/portfolio/peoplefund">Peoplefund</a></li>
+                                <li <?php if($list_category and $list_category == 'portfolio' and $category_name == 'postype') echo "class='active'"; ?>><a href="/portfolio/postype">Postype</a></li>
+                                <li <?php if($list_category and $list_category == 'portfolio' and $category_name == 'bookclip') echo "class='active'"; ?>><a href="/portfolio/bookclip">Bookclip</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="layout-content">
+            <?php echo $this->getContent(); ?>
+        </section>
+        <!--<script src="../../gulpfile.js"></script>-->
+        <script src="/assets/js/jquery-2.1.4.js"></script>
+        <script src="/assets/js/default.js"></script>
+        <?php $this->assets->outputJs(); ?>
+        <div id="sc-backdrop"></div>
+    </body>
+</html>
